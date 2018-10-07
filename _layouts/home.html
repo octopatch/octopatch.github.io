@@ -6,7 +6,15 @@ layout: default
   {%- if page.title -%}
     <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
-
+   <div>
+     <div>
+        <img height="250px" src="assets/img/octopatch-logo.svg" alt="foo" title="foo text description" />
+      A service to fix coding style violations in your pull requests
+    </div>
+     <div style="margin-top:50px;">
+      {% include subscription-form.html %}
+     </div>
+   </div>
   {{ content }}
 
   {%- if site.posts.size > 0 -%}
